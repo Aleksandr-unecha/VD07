@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+</head>
+<body>
+    <h1>Добро пожаловать на сайт!</h1>
+    <a href="{{ url_for('register') }}">Регистрация</a>
+    <a href="{{ url_for('login') }}">Вход</a>
+    {% if current_user.is_authenticated %}
+        <a href="{{ url_for('profile') }}">Профиль</a>
+        <a href="{{ url_for('logout') }}">Выход</a>
+    {% endif %}
+</body>
+</html>
