@@ -18,7 +18,9 @@ cd VD09
 
 3. Создайте и активируйте виртуальное окружение:
 
-Установите необходимые зависимости:bash
+Установите необходимые зависимости:
+
+```bash
 python -m venv venv
 source venv/bin/activate  # Для Linux/MacOS
 venv\Scripts\activate  # Для Windows
